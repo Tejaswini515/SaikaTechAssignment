@@ -10,6 +10,8 @@ const reducer = (state=initialState, action) => {
           return Object.assign({}, state, {users: action.users });
         case actionTypes.GET_USERS_FAIL:
           return Object.assign({}, state, { error: action.error });
+        case actionTypes.DELETE_USER_FAIL:
+          return Object.assign({}, state, { error: action.error });
         default: return state;
     }
 }

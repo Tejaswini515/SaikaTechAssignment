@@ -18,10 +18,6 @@ export const getUsersFail = error => {
 export const deleteUser = (id) => {
     return { type: actionTypes.DELETE_USER, id: id};
 };
-  
-export const deleteUserSuccess = (id) => {
-    return { type: actionTypes.DELETE_USER_SUCCESS};
-};
 
 export const deleteUserFail = (error) => {
     return { type: actionTypes.DELETE_USER_FAIL, error: error};

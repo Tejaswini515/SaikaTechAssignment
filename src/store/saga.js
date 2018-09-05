@@ -16,7 +16,6 @@ function* getUsersSaga(action) {
 function* deleteUserSaga(action) {
   try {
     yield axios.patch(`http://localhost:3001/users/${action.id}`,{"status": "deleted"});
-    yield put(actions.deleteUserSuccess());
     yield put(actions.getUsers());
   } catch (error) {
     yield put(actions.deleteUserFail(error));
