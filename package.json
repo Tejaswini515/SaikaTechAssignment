@@ -1,0 +1,20 @@
+{
+  "name": "userdata",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "concurrently": "^4.0.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.5",
+    "redux-saga": "^0.16.0"
+  },
+  "scripts": {
+    "start": "concurrently \"react-scripts start\"  \"json-server --watch user.json --port 3001\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
